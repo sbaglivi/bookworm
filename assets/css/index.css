@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-size: 1.2em;
+}
+#search {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20vh;
+  font-size: 1.2em;
+  padding: 2px;
+}
+.toggled {
+  background-color: black;
+  color: white;
+}
+.modal {
+  position: fixed;
+  background-color: grey;
+  min-height: 60vh;
+  width: 60vw;
+  overflow: wrap;
+  top: 20vh;
+  left: 20vw;
+  z-index: 10;
+  padding: 20px;
+}
+.modal h2 {
+  padding-bottom: 20px;
+}
+.closeSpan {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  font-size: 2em;
+}
+.closeSpan:hover {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.wrap {
+  white-space: pre-wrap;
+}
+tr td:first-of-type:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+table {
+  margin: 0 auto;
+  border-spacing: 0px;
+}
+td,
+th {
+  border: 1px solid black;
+}
+tr:nth-of-type(2n) {
+  background-color: lightgrey;
+}

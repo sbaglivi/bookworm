@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookworm</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script src="assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <input
+      type="text"
+      name="search"
+      id="search"
+      title="Book title search form"
+      placeholder="fantasy"
+    />
+    <label for="results_per_page">Results per page:</label>
+    <select name="results_per_page" id="results_per_page">
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+    </select>
+    <div class="results"></div>
+    <div class="modal hidden">
+      <span class="closeSpan" onclick="toggleModalBox()">&times;</span>
+      <h2></h2>
+      <p></p>
+    </div>
+  </body>
+</html>
