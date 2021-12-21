@@ -588,6 +588,15 @@ pre {
   font-size: 1.2em;
 }
 
+.errorMessage {
+  padding: 10px;
+  margin: 20px 10px;
+  background-color: #400000;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 0.5em;
+}
+
 .closeSpan {
   position: absolute;
   right: 8px;
