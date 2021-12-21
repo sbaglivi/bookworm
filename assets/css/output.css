@@ -467,18 +467,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @font-face {
-  font-family: "Great Vibes";
-
-  src: url("../fonts/GreatVibes-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Imperial Script";
-
-  src: url("../fonts/ImperialScript-Regular.ttf");
-}
-
-@font-face {
   font-family: "Mea Culpa";
 
   src: url("../fonts/MeaCulpa-Regular.ttf");
@@ -496,22 +484,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: "Lato";
 
   src: url("../fonts/Lato-Regular.ttf");
-
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Playfair";
-
-  src: url("../fonts/PlayfairDisplay-Bold.ttf");
-
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Playfair";
-
-  src: url("../fonts/PlayfairDisplay-Regular.ttf");
 
   font-weight: 400;
 }
@@ -540,6 +512,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 
 h1 {
@@ -597,7 +570,7 @@ pre {
   top: 5vh;
   left: 5vw;
   overflow-y: auto;
-  z-index: 10;
+  z-index: 2;
   padding: 40px;
 }
 
@@ -612,6 +585,7 @@ pre {
 
 .modal h2 {
   padding-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .closeSpan {
@@ -655,6 +629,10 @@ table {
 td,
 th {
   border: 1px solid black;
+}
+
+td {
+  padding: 0px 10px;
 }
 
 tr:nth-of-type(2n) {
