@@ -2,31 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookworm</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <script src="assets/js/index.js" defer></script>
+    <!-- <link rel="stylesheet" href="assets/css/output.css" /> -->
+    <link rel="icon" href="assets/images/open-book.png">
+    <script src="assets/js/dist.js" defer></script>
   </head>
   <body>
-    <input
-      type="text"
-      name="search"
-      id="search"
-      title="Book title search form"
-      placeholder="fantasy"
-    />
+    <h1>Bookworm</h1>
+    <h3 class="tw-text-xl">
+      Search for a genre and browse its most popular books
+    </h3>
+    <div>
+      <input
+        class="tw-rounded-md tw-h-10 tw-text-black tw-px-4 tw-py-2"
+        type="text"
+        name="search"
+        id="search"
+        title="Book title search form"
+        placeholder="Try fantasy!"
+      />
+      <button
+        class="
+          searchButton
+          tw-h-10 tw-bg-slate-200 tw-text-black tw-rounded-md tw-px-4
+        "
+      >
+        Search
+      </button>
+    </div>
+    <div>
     <label for="results_per_page">Results per page:</label>
-    <select name="results_per_page" id="results_per_page">
+    <select
+      name="results_per_page"
+      id="results_per_page"
+      class="tw-text-black tw-text-sm"
+    >
+
+    </div>
       <option value="10">10</option>
       <option value="25">25</option>
       <option value="50">50</option>
     </select>
     <div class="results"></div>
-    <div class="modal hidden">
+    <div class="modal tw-rounded-md hidden tw-object-center">
       <span class="closeSpan" onclick="toggleModalBox()">&times;</span>
       <h2></h2>
-      <p></p>
+      <pre class="wrap"></pre>
     </div>
   </body>
 </html>
